@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0px auto;
+    max-width: 1220px;
+    width: 100%;
+    padding: 0px 10px;
+}
+
+body {
+    background-color: rgb(2, 2, 36);
+}
+
+.languages {
+    margin: 0;
+    background: rgb(2, 2, 36);
+    /* or transparent if layering */
+    overflow-x: hidden;
+}
+
+.box {
+    position: absolute;
+    bottom: 0px;
+    width: 20px;
+    background: white;
+    opacity: 0.8;
+    animation: moveUp 10s linear infinite;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(100vh);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(-20vh);
+        opacity: 0;
+    }
+}
+
+a {
+    color: #fff;
+}
+
+/*Header*/
+header {}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 30%;
+    padding: 20px 0px;
+    font-family: Exo;
+    font-size: 42px;
+    font-weight: 700;
+    color: #fff;
+}
+
+nav {
+    width: 70%;
+    border: 0px solid #fff;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.041);
+
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: right;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    padding: 20px;
+    font-family: Open Sans;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    color: rgb(245, 170, 245);
+}
+
+/*Header*/
+
+/*main-about Start*/
+.main-about {
+    margin: 80px 0px;
+    width: 100%;
+    display: flex;
+}
+
+.about-text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+
+.para-1 {
+    font-family: Lucida Handwriting;
+    font-size: 22px;
+}
+
+.head-1 {
+    font-family: Cambria;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+#element {
+    font-family: Exo;
+    font-size: 65px;
+    font-weight: 600;
+    color: yellow;
+}
+
+.para-2 {
+    padding-right: 35px;
+    font-family: Open Sans;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.social-icons {
+    padding: 20px 0px;
+    height: 30px;
+}
+
+.social-icons i {
+    font-size: 22px;
+    padding-right: 20px;
+}
+
+.social-icons a:hover i {
+    color: rgb(3, 89, 116);
+}
+
+.btn {
+    width: 217px;
+    margin: 20px 0px;
+    padding: 17px 36px;
+    border-radius: 15px;
+    border: 1px solid #fff;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.about-img {
+    width: 40%;
+}
+
+.bg-image {
+    width: 500px;
+    height: auto;
+}
+
+/*main-about End*/
+
+/*Skills Start*/
+.skills-head {
+    padding: 20px 0px;
+    font-family: Freehand521 BT;
+    font-size: 52px;
+    color: yellow;
+    font-weight: 300;
+    text-align: center;
+}
+
+.skills-main nav {
+    margin: 0px auto;
+}
+
+.lang-main {
+    margin: 20px auto;
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+}
+
+.skill-item img {
+    width: 80px;
+    height: auto;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-item {
+    margin: 20px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.skill-item.hide {
+    display: none;
+}
+
+.filter-menu {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    margin: 5px;
+    font-size: 22px;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    background-color: #ff0;
+    color: #000;
+}
+
+/*Skills End*/
+
+/*Projects Start*/
+.project-main{
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.project-box{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: hidden;
+}
+.project-box img{
+    width: 100%;
+
+}
+/*Projects End*/
+
+/*Footer Start*/
+
+/*Footer End*/

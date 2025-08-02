@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/26c31ed8b7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="nav-bar">
+                <div class="logo">PORTFOLIO</div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Achivements</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="about">
+            <div class="container">
+                <div class="main-about">
+                    <div class="about-text">
+                        <p class="para-1">Hey There !!</p>
+                        <h2 class="head-1">I'm Tarun</h2>
+                        <span id="element"></span>
+                        <p class="para-2">I’m a passionate and detail-oriented creative professional with a strong focus
+                            on designing and building engaging digital experiences. With a foundation in modern web
+                            technologies and a keen eye for aesthetics, I aim to bring ideas to life through clean,
+                            responsive, and user-friendly design. My portfolio showcases a range of projects that
+                            highlight my ability to blend functionality with visual appeal, reflecting both technical
+                            skill and creative thinking.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="resume.pdf" target="_blank"><button class="btn">Download Resume <i
+                                    class="fa-solid fa-download"></i></button></a>
+                    </div>
+                    <div class="about-img">
+                        <img class="bg-image" src="images/bg.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skills">
+            <div class="container">
+                <div class="skills-main">
+                    <h2 class="skills-head">Skills</h2>
+                    <nav>
+                        <div class="filter-menu">
+                            <button class="filter-btn active" data-filter="all">All</button>
+                            <button class="filter-btn" data-filter="language">Languages</button>
+                            <button class="filter-btn" data-filter="frontend">Front-End</button>
+                            <button class="filter-btn" data-filter="backend">Back-End</button>
+                            <button class="filter-btn" data-filter="database">Database</button>
+                            <button class="filter-btn" data-filter="tools">Tools</button>
+                        </div>
+                    </nav>
+
+                    <div class="skills-container">
+                        <!-- Each skill icon -->
+                        <div class="skill-item language"><img src="images/c.png" alt="C"></div>
+                        <div class="skill-item language"><img src="images/c++.png" alt="C++"></div>
+                        <div class="skill-item frontend language"><img src="images/html.png" alt="HTML"></div>
+                        <div class="skill-item frontend language"><img src="images/css.png" alt="CSS"></div>
+                        <div class="skill-item frontend language"><img src="images/js.png" alt="JavaScript"></div>
+                        <div class="skill-item frontend language"><img src="images/bootstrap.png" alt="Bootstrap"></div>
+                        <div class="skill-item tools"><img src="images/vs.png" alt="Figma"></div>
+                        <div class="skill-item tools"><img src="images/figma.png" alt="PHP"></div>
+                        <div class="skill-item database backend"><img src="images/php.png" alt="VS Code"></div>
+                        <div class="skill-item tools"><img src="images/wordpress.png" alt="MySQL"></div>
+                        <div class="skill-item tools"><img src="images/corel.png" alt="MySQL"></div>
+                        <div class="skill-item tools"><img src="images/photoshop.png" alt="MySQL"></div>
+                    </div>
+
+                </div>
+        </section>
+        <section class="projects">
+            <div class="container">
+                <div class="skills-head">Projects</div>
+                <div class="project-main">
+                    <div class="project-box"><img src="images/project-1.png" alt=""></div>
+                    <div class="project-box"><img src="images/project-2.png" alt=""></div>
+                    <div class="project-box"><img src="images/project-3.png" alt=""></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Designer', 'A Graphic Designer'],
+            typeSpeed: 60,
+        });
+    </script>
+    <script>
+        for (let i = 0; i < 20; i++) {
+            const box = document.createElement("div");
+            box.classList.add("box");
+            box.style.left = Math.random() * 100 + "vw";
+            box.style.height = 20 + Math.random() * 80 + "px";
+            box.style.width = 10 + Math.random() * 40 + "px";
+            box.style.animationDuration = 5 + Math.random() * 10 + "s";
+            document.body.appendChild(box);
+        }
+    </script>
+    <script>
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const skillItems = document.querySelectorAll('.skill-item');
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Active class toggle
+                filterButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                skillItems.forEach(item => {
+                    if (filter === 'all' || item.classList.contains(filter)) {
+                        item.classList.remove('hide');
+                    } else {
+                        item.classList.add('hide');
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
