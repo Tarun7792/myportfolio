@@ -237,6 +237,7 @@ nav ul li a:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    color:#fff;
 }
 
 .filter-btn.active {
@@ -268,5 +269,6 @@ nav ul li a:hover {
 /*Projects End*/
 
 /*Footer Start*/
+
 
 /*Footer End*/
