@@ -1,144 +1,158 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tarun's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/26c31ed8b7.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 
 <body>
-    <header>
+    <section class="navigation">
         <div class="container">
-            <div class="nav-bar">
-                <div class="logo">PORTFOLIO</div>
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Achivements</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section class="about">
-            <div class="container">
-                <div class="main-about">
-                    <div class="about-text">
-                        <p class="para-1">Hey There !!</p>
-                        <h2 class="head-1">I'm Tarun</h2>
-                        <span id="element"></span>
-                        <p class="para-2">I’m a passionate and detail-oriented creative professional with a strong focus
-                            on designing and building engaging digital experiences. With a foundation in modern web
-                            technologies and a keen eye for aesthetics, I aim to bring ideas to life through clean,
-                            responsive, and user-friendly design. My portfolio showcases a range of projects that
-                            highlight my ability to blend functionality with visual appeal, reflecting both technical
-                            skill and creative thinking.</p>
-                        <div class="social-icons">
-                            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        </div>
-                        <a href="resume.pdf" target="_blank"><button class="btn">Download Resume <i
-                                    class="fa-solid fa-download"></i></button></a>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <!-- Brand with 30% width -->
+                    <div class="brand-area" style="width: 30%;">
+                        <a class="navbar-brand gold-text" href="#"
+                            style="font-size: 40px; font-weight: 700; color: #FFD700;">My Portfolio</a>
                     </div>
+
+                    <!-- Toggler for mobile -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Nav items with 70% width and aligned to right -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="nav-area d-flex justify-content-end" style="width: 70%; font-size: 18px;">
+                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link" href="#">Skills</a>
+                                </li>
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link" href="#">Projects</a>
+                                </li>
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link" href="#">Achievements</a>
+                                </li>
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <div class="row about-main">
+                <div class="about-data col-lg-8 col-md-12">
+                    <p class="para-1">Hey There !!</p>
+                    <h2 class="head-1">I'm Tarun</h2>
+                    <span id="element"></span>
+                    <p class="para-2">I’m a passionate and detail-oriented creative professional with a strong focus
+                        on designing and building engaging digital experiences. With a foundation in modern web
+                        technologies and a keen eye for aesthetics, I aim to bring ideas to life through clean,
+                        responsive, and user-friendly design. My portfolio showcases a range of projects that
+                        highlight my ability to blend functionality with visual appeal, reflecting both technical
+                        skill and creative thinking.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="resume.pdf" target="_blank"><button class="btn">Download Resume <i
+                                class="fa-solid fa-download"></i></button></a>
+                </div>
+                <div class="about-img col-lg-4 d-none d-lg-block">
                     <div class="about-img">
                         <img class="bg-image" src="images/bg.png" alt="">
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="skills">
-            <div class="container">
-                <div class="skills-main">
-                    <h2 class="skills-head">Skills</h2>
-                    <nav>
-                        <div class="filter-menu">
-                            <button class="filter-btn active" data-filter="all">All</button>
-                            <button class="filter-btn" data-filter="language">Languages</button>
-                            <button class="filter-btn" data-filter="frontend">Front-End</button>
-                            <button class="filter-btn" data-filter="backend">Back-End</button>
-                            <button class="filter-btn" data-filter="database">Database</button>
-                            <button class="filter-btn" data-filter="tools">Tools</button>
-                        </div>
-                    </nav>
-
-                    <div class="skills-container">
-                        <!-- Each skill icon -->
-                        <div class="skill-item language"><img src="images/c.png" alt="C"></div>
-                        <div class="skill-item language"><img src="images/c++.png" alt="C++"></div>
-                        <div class="skill-item frontend language"><img src="images/html.png" alt="HTML"></div>
-                        <div class="skill-item frontend language"><img src="images/css.png" alt="CSS"></div>
-                        <div class="skill-item frontend language"><img src="images/js.png" alt="JavaScript"></div>
-                        <div class="skill-item frontend language"><img src="images/bootstrap.png" alt="Bootstrap"></div>
-                        <div class="skill-item tools"><img src="images/vs.png" alt="Figma"></div>
-                        <div class="skill-item tools"><img src="images/figma.png" alt="PHP"></div>
-                        <div class="skill-item database backend"><img src="images/php.png" alt="VS Code"></div>
-                        <div class="skill-item tools"><img src="images/wordpress.png" alt="MySQL"></div>
-                        <div class="skill-item tools"><img src="images/corel.png" alt="MySQL"></div>
-                        <div class="skill-item tools"><img src="images/photoshop.png" alt="MySQL"></div>
+        </div>
+    </section>
+    <section class="skills">
+        <div class="container">
+            <div class="skills-main">
+                <h2 class="skills-head">Skills</h2>
+                <nav>
+                    <div class="filter-menu">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="language">Languages</button>
+                        <button class="filter-btn" data-filter="frontend">Front-End</button>
+                        <button class="filter-btn" data-filter="backend">Back-End</button>
+                        <button class="filter-btn" data-filter="database">Database</button>
+                        <button class="filter-btn" data-filter="tools">Tools</button>
                     </div>
+                </nav>
 
+                <div class="skills-container">
+                    <!-- Each skill icon -->
+                    <div class="skill-item language"><img src="images/c.png" alt="C"></div>
+                    <div class="skill-item language"><img src="images/c++.png" alt="C++"></div>
+                    <div class="skill-item frontend language"><img src="images/html.png" alt="HTML"></div>
+                    <div class="skill-item frontend language"><img src="images/css.png" alt="CSS"></div>
+                    <div class="skill-item frontend language"><img src="images/js.png" alt="JavaScript"></div>
+                    <div class="skill-item frontend language"><img src="images/bootstrap.png" alt="Bootstrap"></div>
+                    <div class="skill-item tools"><img src="images/vs.png" alt="Figma"></div>
+                    <div class="skill-item tools"><img src="images/figma.png" alt="PHP"></div>
+                    <div class="skill-item database backend"><img src="images/php.png" alt="VS Code"></div>
+                    <div class="skill-item tools"><img src="images/wordpress.png" alt="MySQL"></div>
+                    <div class="skill-item tools"><img src="images/corel.png" alt="MySQL"></div>
+                    <div class="skill-item tools"><img src="images/photoshop.png" alt="MySQL"></div>
                 </div>
-        </section>
-        <section class="projects">
-            <div class="container">
-                <div class="skills-head">Projects</div>
-                <div class="project-main">
-                    <div class="project-box"><img src="images/project-1.png" alt=""></div>
-                    <div class="project-box"><img src="images/project-2.png" alt=""></div>
-                    <div class="project-box"><img src="images/project-3.png" alt=""></div>
+
+            </div>
+    </section>
+    <section class="projects" id="#projects">
+        <div class="container">
+            <div class="skills-head">Projects</div>
+            <div class="project-main">
+                <div class="project-box"><img src="images/project-1.png" alt=""></div>
+                <div class="project-box"><img src="images/project-2.png" alt=""></div>
+                <div class="project-box"><img src="images/project-3.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-main">
+                <h2 class="footer-head">MyPortfolio</h2>
+                <div class="contact">
+                    Contact's:
+                    <div class="call"><a href="tel:+918351897792"><span>Call Me: 8351897792</span><i
+                                class="fa-solid fa-phone"></i></a></div>
+                    <div class="call"><a
+                            href="https://mail.google.com/mail/u/0/#inbox"><span>tarunkaundal12@gmail.com</span><i
+                                class="fa-solid fa-envelope"></i></a></div>
+                    <div class="call"><a href="https://www.instagram.com/t_a_r_u_n___08/"><span>Instagram</span><i
+                                class="fa-brands fa-instagram"></i></a></div>
+                    <div class="call"><a href=""><span>Facebook</span><i class="fa-brands fa-facebook-f"></i></a></div>
+
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Web Designer', 'A Graphic Designer'],
-            typeSpeed: 60,
-        });
-    </script>
-    <script>
-        for (let i = 0; i < 20; i++) {
-            const box = document.createElement("div");
-            box.classList.add("box");
-            box.style.left = Math.random() * 100 + "vw";
-            box.style.height = 20 + Math.random() * 80 + "px";
-            box.style.width = 10 + Math.random() * 40 + "px";
-            box.style.animationDuration = 5 + Math.random() * 10 + "s";
-            document.body.appendChild(box);
-        }
-    </script>
-    <script>
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        const skillItems = document.querySelectorAll('.skill-item');
-
-        filterButtons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                // Active class toggle
-                filterButtons.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-
-                const filter = btn.getAttribute('data-filter');
-
-                skillItems.forEach(item => {
-                    if (filter === 'all' || item.classList.contains(filter)) {
-                        item.classList.remove('hide');
-                    } else {
-                        item.classList.add('hide');
-                    }
-                });
-            });
-        });
-    </script>
-
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
